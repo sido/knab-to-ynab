@@ -17,4 +17,6 @@ npm-debug.log
 
 # Application
 
-*.csv
+Knab\ transactieoverzicht\ betaalrekening* knab.in.csv
+knab.in.csv
+ynab.out.csv
