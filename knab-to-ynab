@@ -1,0 +1,10 @@
+#!/bin/bash
+clear
+echo "Convert Knab bank transactions export to YNAB import file."
+echo ""
+
+[ -f knab.in.csv ] && rm knab.in.csv
+cp -v Knab\ transactieoverzicht\ betaalrekening* knab.in.csv
+tail -n+3 knab.in.csv > knab.in.csv
+rm Knab\ transactieoverzicht\ betaalrekening* knab.in.csv
+tail -n+3 knab.in.csv > knab.in.csv
