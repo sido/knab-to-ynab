@@ -6,4 +6,6 @@ echo ""
 [ -f knab.in.csv ] && rm knab.in.csv
 cp -v Knab\ transactieoverzicht\ betaalrekening* knab.in.csv
 tail -n+3 knab.in.csv > knab.temp.csv && mv knab.temp.csv knab.in.csv
-rm Knab\ transactieoverzicht\ betaalrekening* knab.in.csv
+rm Knab\ transactieoverzicht\ betaalrekening*
+
+node knab-to-ynab.js
