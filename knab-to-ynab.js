@@ -9,8 +9,8 @@ var pad = function(n, width, z) {
 }
 
 csv()
-.from.path(__dirname+'/knab.in.csv', { delimiter: ';', escape: '"' })
-.to.stream(fs.createWriteStream(__dirname+'/ynab.out.csv'), { delimiter: ',', escape: '"' })
+.from.path(__dirname+'/knab.csv', { delimiter: ';', escape: '"' })
+.to.stream(fs.createWriteStream(__dirname+'/ynab.csv'), { delimiter: ',', escape: '"' })
 .transform(function(row){
 	console.log("\n" + '          original:  '+JSON.stringify(row));
 

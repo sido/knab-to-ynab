@@ -4,8 +4,11 @@ echo "Convert Knab bank transactions export to YNAB import file."
 echo ""
 
 [ -f knab.in.csv ] && rm knab.in.csv
-cp -v Knab\ transactieoverzicht\ betaalrekening* knab.in.csv
-tail -n+3 knab.in.csv > knab.temp.csv && mv knab.temp.csv knab.in.csv
-rm Knab\ transactieoverzicht\ betaalrekening*
+[ -f ynab.out.csv ] && rm ynab.out.csv
+
+mv -v Knab\ transactieoverzicht\ betaalrekening* knab.csv
+tail -n+3 knab.csv > temp && mv temp knab.csv
 
 node knab-to-ynab.js
+
+echo 'Date,Payee,Category,Memo,Outflow,Inflow' | cat - ynab.csv > temp && mv temp ynab.csv

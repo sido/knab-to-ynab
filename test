@@ -1,2 +1,2 @@
 #!/bin/bash
-cp knab.example.csv Knab\ transactieoverzicht\ betaalrekening\ 0987654321\ -\ 2013-07-01\ -\ 2013-08-01.csv && ./knab-to-ynab
+cp examples/knab.csv Knab\ transactieoverzicht\ betaalrekening\ 0987654321\ -\ 2013-07-01\ -\ 2013-08-01.csv && ./knab-to-ynab

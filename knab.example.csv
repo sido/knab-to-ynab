@@ -1,3 +1,0 @@
-KNAB EXPORT;;;;;;;;;;;;;;
-Rekeningnummer;Transactiedatum;Valutacode;CreditDebet;Bedrag;Tegenrekeningnummer;Tegenrekeninghouder;Valutadatum;Betaalwijze;Omschrijving;Type betaling;Machtigingsnummer;Incassant ID;Adres;
-"0987654321";"01-08-2013";"EUR";"D";"10";"1234567890";"Sido van Gennip";"01-08-2013";"Overboeking";"Voorbeeld transactie.";"";"";"";"";
